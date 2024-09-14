@@ -1,0 +1,412 @@
+.navbar-nav li {
+    margin-right: 10px;
+
+}
+
+#Home {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/hero-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: aliceblue;
+    text-align: center;
+}
+
+.content span::after {
+    content: "|";
+    animation: typing;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    10% {
+        content: "D|";
+    }
+
+    20% {
+        content: "De|";
+    }
+
+    30% {
+        content: "Des|";
+    }
+
+    40% {
+        content: "Desi|";
+    }
+
+    50% {
+        content: "Desig|";
+    }
+
+    60% {
+        content: "Design|";
+    }
+
+    70% {
+        content: "Designe|";
+    }
+
+    80% {
+        content: "Designer|";
+    }
+
+    90% {
+        content: "Designer|";
+    }
+
+    100% {
+        content: "Designer|";
+    }
+}
+
+p {
+    color: rgb(78, 78, 78);
+    font-size: 14px;
+}
+
+/* --------------About-------------- */
+
+.info {
+    width: auto;
+    /* background-color: aqua; */
+}
+
+.about-me {
+    width: auto;
+    /* background-color: rgb(140, 177, 137); */
+}
+
+.about-img img {
+    width: 60%;
+}
+
+.about-me h2 {
+    position: relative;
+}
+
+.about-me h2::before {
+    content: " ";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #4a4cf5;
+}
+
+.about-me p {
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 1.6rem;
+}
+
+/* --------------Services-------------- */
+
+.title h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.title p {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.title p::after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 48%;
+    width: 30px;
+    height: 4px;
+    background-color: #4a4cf5;
+}
+
+.card-service h3 {
+    padding-top: 11px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-service p {
+    padding: 5px 12px 10px;
+}
+
+.card-service .icon {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: solid 8px #0078ff;
+    overflow: hidden;
+    transition: all 500ms ease;
+}
+
+.card-service .icon .inner i {
+    font-size: 20px;
+}
+
+.card-service:hover .inner {
+    background-color: #0078ff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card-service .inner:hover i {
+    color: white;
+}
+
+.card-service:hover .icon {
+    border: solid 9px #0077ff30;
+}
+
+/* ------------- Bar ------------- */
+
+.Bar {
+    background-image: linear-gradient(rgba(39, 122, 217, 0.735), rgba(39, 122, 217, 0.735)), url(../img/counters-bg.jpg);
+    height: 55vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Bar .icon {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid 7px #daeafc;
+    color: white;
+    /* -webkit-box-shadow: 0 0 0 10px #cde1f8;
+    box-shadow: 0 0 0 10px #cde1f8; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* ---------- Portfolio ---------- */
+
+.porto-box {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.porto-content .details span {
+    font-size: x-small;
+}
+
+.porto-content .porto-icon {
+    color: #0078ff;
+    font-size: 19px;
+}
+
+.porto-content .porto-icon .icon-circle {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    border-radius: 50%;
+    border: solid 2px #0078ff;
+    padding: 0 5px;
+}
+
+.porto-box img {
+    transition: all 1s;
+}
+
+.porto-box:hover img {
+    transform: scale(1.3, 1.3);
+}
+
+/* ---------- Testimonial ---------- */
+#testimonials {
+    color: #fff;
+    height: 83%;
+    background-image: linear-gradient(rgba(0, 119, 255, 0.6), rgba(0, 119, 255, 0.6)), url(../img/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ---------- Blog ---------- */
+#Blog .card{
+    border-bottom: 1;
+}
+#Blog .blog-img-details{
+    border-radius: 50%;
+    width: 12%;
+}
+#Blog .icon{
+position: absolute;
+top: 55%;
+right: 150px;
+left: 150px;
+text-align: center;
+text-transform: uppercase;
+font-size: 12px;
+padding: 5px 20px;
+border-radius: 4px;
+color: white;
+background-color: #0078ff;
+}
+#Blog .title-head:hover{
+color: #0078ff;
+cursor: pointer;
+transition: 1s;
+}
+
+  /* ---------- Contact ---------- */
+  #Contact {
+    height: 750px;
+    background-image: linear-gradient(rgba(0, 119, 255, 0.6), rgba(0, 119, 255, 0.6)), url(../img/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+    .blue-line-2::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 100px;
+      bottom: -12px;
+      background-color: #0078ff;
+    } 
+    button[type="submit"] {
+      border: 0;
+      padding: 10px 24px;
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
+      transition: 0.4s;
+  
+      &:hover {
+        background: #3393ff;
+        border: none;
+        -webkit-box-shadow: 0 0 0 4px #cde1f8;
+        box-shadow: 0 0 0 4px #cde1f8;
+      }
+    } 
+    .contact-list-icon li i {      
+      margin-right: 10px;
+    }  
+    .contact-social-icons a {
+      color: #1e1e1e;
+      text-decoration: none;
+    } 
+    .contact-social-icons .social-icons-circle {
+      height: 40px;
+      width: 40px;
+      font-size: 19px;
+      border-radius: 50%;
+      line-height: 1.6;
+      margin: 0 15px 0 0;
+      -webkit-box-shadow: 0 0 0 3px #0078ff;
+      box-shadow: 0 0 0 3px #0078ff;
+      -webkit-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      transition: all 500ms ease;
+  
+      &:hover {
+        background-color: #0078ff;
+        color: #fff;
+        -webkit-box-shadow: 0 0 0 3px #cde1f8;
+        box-shadow: 0 0 0 3px #cde1f8;
+      }
+    }
+   }
+
+ /* ---------- Footer ---------- */
+  #footer {
+    background: #0062d3;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  
+ /* ---------- Top Button ---------- */
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #0078ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* @media (max-width: 450px) {
+    #Contact {
+      height: 800px;
+    }
+  }
+  @media (max-width: 769px) {
+    #Home {
+      h1 {
+        font-size: 48px;
+      }
+    }
+  
+    #counter {
+      height: 1000px;
+  
+      .gy-cus
+      {
+        --bs-gutter-y:3rem;
+      }
+    }
+  
+    #Contact {
+      height: 1285px;
+    }
+  }
+  @media (max-width: 991px) { 
+    #about {
+      .about-info {
+        margin-top: 15px;
+      }
+  
+      .about-me {
+        position: relative;
+        top: -30px;
+      }
+    }
+  } */
